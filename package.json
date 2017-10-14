@@ -1,7 +1,7 @@
 {
   "name": "@gen/prng",
   "version": "0.0.1",
-  "description": "random seed generator",
+  "description": "Pseudo random number generator",
   "main": "dist/prng.cjs.js",
   "module": "dist/prng.esm.js",
   "browser": "dist/prng.umd.js",
@@ -11,11 +11,11 @@
     "typecheck": "flow check",
     "build": "NODE_ENV=production rollup -c",
     "dev": "rollup -c -w",
-    "test": "jest",
+    "test": "npm run lint && npm run typecheck && jest",
     "test:watch": "jest --watch",
     "prepare": "npm run build"
   },
-  "author": "Gen Ichino<zenoplex@gmail.com>",
+  "author": "Gen Ichino",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -43,5 +43,6 @@
   "engines": {
     "node": "^8.7.0",
     "yarn": "^1.1.0"
-  }
+  },
+  "repository": "git@github.com:zenoplex/prng.git"
 }
