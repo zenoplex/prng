@@ -1,0 +1,47 @@
+{
+  "name": "@gen/prng",
+  "version": "0.0.1",
+  "description": "random seed generator",
+  "main": "dist/prng.cjs.js",
+  "module": "dist/prng.esm.js",
+  "browser": "dist/prng.umd.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "lint": "eslint .",
+    "typecheck": "flow check",
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "npm run build"
+  },
+  "author": "Gen Ichino<zenoplex@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "flow-bin": "^0.56.0",
+    "flow-typed": "^2.1.5",
+    "jest": "^20.0.4",
+    "prettier-eslint": "^8.2.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^8.7.0",
+    "yarn": "^1.1.0"
+  }
+}
