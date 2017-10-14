@@ -1,5 +1,7 @@
 # prng
 
+[![Build Status](https://travis-ci.org/zenoplex/prng.svg?branch=master)](https://travis-ci.org/zenoplex/prng)
+
 Simple pseudo random number generator based on [Park-Miller-Carta](http://www.firstpr.com.au/dsp/rand31/).
 
 There are more sophisticated and battle tested prng out there so its advised to take a look at more famous generators first.
