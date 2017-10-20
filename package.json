@@ -1,6 +1,6 @@
 {
   "name": "@gen/prng",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pseudo random number generator",
   "main": "dist/prng.cjs.js",
   "module": "dist/prng.esm.js",
